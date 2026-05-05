@@ -60,7 +60,7 @@ Currently focused on Java-based backend systems, SQL Server database design, and
 
 ## Featured Project
 
-### [`inventory-management-system`](https://github.com/YOUR_USERNAME/inventory-management-system)
+### [`inventory-management-system`](https://github.com/hcx-h/inventory-management-system)
 
 > A complete inventory management backend built with Java 21, JDBC, and SQL Server.
 
@@ -96,9 +96,9 @@ Pattern →  DAO / Service / Domain Model
 
 | | |
 |---|---|
-| **GitHub** | [@YOUR_USERNAME](https://github.com/YOUR_USERNAME) |
-| **LinkedIn** | [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/YOUR_PROFILE) |
-| **Email** | your@email.com |
+| **GitHub** | [@YOUR_USERNAME](https://github.com/hcx-h) |
+| **LinkedIn** | [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/hectoroyogo) |
+| **Email** | hectoroyogo@email.com |
 
 ---
 
