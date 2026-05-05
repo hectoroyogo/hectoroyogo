@@ -96,8 +96,8 @@ Pattern →  DAO / Service / Domain Model
 
 | | |
 |---|---|
-| **GitHub** | [@YOUR_USERNAME](https://github.com/hcx-h) |
-| **LinkedIn** | [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/hectoroyogo) |
+| **GitHub** | [@hcx-h](https://github.com/hcx-h) |
+| **LinkedIn** | [linkedin.com/in/hectoroyogo](https://linkedin.com/in/hectoroyogo) |
 | **Email** | hectoroyogo@email.com |
 
 ---
