@@ -60,7 +60,7 @@ Currently focused on Java-based backend systems, SQL Server database design, and
 
 ## Featured Project
 
-### [`inventory-management-system`](https://github.com/hectoroyogo/inventario-logistica-jdbc)
+### [`inventario-logistica-jdbc`](https://github.com/hectoroyogo/inventario-logistica-jdbc)
 
 > A complete inventory management backend built with Java 21, JDBC, and SQL Server.
 
