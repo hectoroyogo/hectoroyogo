@@ -12,7 +12,7 @@
 **Backend Developer · Systems & Data Focus**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/hectoroyogo)
-[![Email](https://img.shields.io/badge/Email-333333?style=flat-square&logo=gmail&logoColor=white)](mailto:hcx-h@email.com)
+[![Email](https://img.shields.io/badge/Email-333333?style=flat-square&logo=gmail&logoColor=white)](mailto:hectoroyogo@email.com)
 
 </div>
 
@@ -60,7 +60,7 @@ Currently focused on Java-based backend systems, SQL Server database design, and
 
 ## Featured Project
 
-### [`inventory-management-system`](https://github.com/hcx-h/inventory-management-system)
+### [`inventory-management-system`](https://github.com/hectoroyogo/inventory-management-system)
 
 > A complete inventory management backend built with Java 21, JDBC, and SQL Server.
 
@@ -96,7 +96,7 @@ Pattern →  DAO / Service / Domain Model
 
 | | |
 |---|---|
-| **GitHub** | [@hcx-h](https://github.com/hcx-h) |
+| **GitHub** | [@hectoroyogo](https://github.com/hectoroyogo) |
 | **LinkedIn** | [linkedin.com/in/hectoroyogo](https://linkedin.com/in/hectoroyogo) |
 | **Email** | hectoroyogo@email.com |
 
