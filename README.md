@@ -1,94 +1,137 @@
 <div align="center">
 
-```
-██████╗  █████╗  ██████╗██╗  ██╗███████╗███╗   ██╗██████╗
-██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝████╗  ██║██╔══██╗
-██████╔╝███████║██║     █████╔╝ █████╗  ██╔██╗ ██║██║  ██║
-██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██║╚██╗██║██║  ██║
-██████╔╝██║  ██║╚██████╗██║  ██╗███████╗██║ ╚████║██████╔╝
-╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝
-```
+# Hector Oyogo
 
-**Backend Developer · Systems & Data Focus**
+**Backend Developer in Training** · Java · SQL Server · Systems Architecture
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/hectoroyogo)
-[![Email](https://img.shields.io/badge/Email-333333?style=flat-square&logo=gmail&logoColor=white)](mailto:hectoroyogo@email.com)
+[![GitHub](https://img.shields.io/badge/GitHub-hectoroyogo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/hectoroyogo)
 
 </div>
 
 ---
 
-## About
+IT/DAM student focused on backend systems and data engineering. I build around the persistence layer — relational databases, application architecture, and the data flows that hold a system together.
 
-IT/DAM student building toward backend and systems engineering. My work centers on relational databases, data persistence layers, and application architecture — the parts of software that handle real complexity under the surface.
+My main work right now is a full-stack inventory system built from scratch in Java: multi-layer architecture, role-based access, audit logging via SQL triggers, and a lightweight HTTP interface alongside the core console app. Docker handles local infrastructure.
 
-Currently focused on Java-based backend systems, SQL Server database design, and understanding how software components communicate with data at scale. Interested in clean architecture, audit-grade data integrity, and writing systems that are correct before they are clever.
+Not chasing breadth. Building depth where it matters at this stage.
 
 ---
 
-## Tech Stack
+## Stack
 
 <div align="center">
 
-[![Tech Stack](https://skillicons.dev/icons?i=java,linux,git,github,idea&theme=dark)](https://skillicons.dev)
+[![Stack](https://skillicons.dev/icons?i=java,maven,docker,git,linux,idea&theme=dark)](https://skillicons.dev)
 
 </div>
 
 <br>
 
-| Layer | Tools & Technologies |
+| | Technologies |
 |---|---|
-| **Language** | Java 21 |
-| **Database** | SQL Server · JDBC |
-| **Query & Schema** | T-SQL · Triggers · Stored Procedures |
+| **Language** | Java 17 |
+| **Data** | SQL Server · T-SQL · JDBC · Triggers · Stored Procedures |
+| **Build & Dependencies** | Maven |
+| **Infrastructure** | Docker · Docker Compose |
 | **Version Control** | Git · GitHub |
 | **Environment** | Linux · Bash |
 | **Tooling** | IntelliJ IDEA |
 
----
+**Currently learning**
 
-## Current Focus
-
-- Relational database design and advanced SQL query patterns
-- Audit logging and data integrity enforcement via SQL Server triggers
-- Layered backend architecture — DAO, service, and presentation separation
-- JDBC internals: connection management, prepared statements, transaction control
-- Linux fundamentals and command-line workflows for development environments
-- Application architecture decisions and their long-term trade-offs
+| | Technologies |
+|---|---|
+| **Framework** | Spring Boot · Spring MVC |
+| **API Design** | REST · HTTP semantics · JSON contracts |
+| **Database** | PostgreSQL · Prisma (schema-first modeling) |
+| **Testing** | JUnit 5 · basic integration testing |
 
 ---
 
-## Featured Project
+## Currently Focused On
+
+- Transitioning from raw JDBC to Spring Boot — understanding what the framework abstracts and why
+- REST API design: resource modeling, status codes, error handling conventions
+- Docker multi-container setups: separating application and database services cleanly
+- Layered architecture patterns and their trade-offs at junior scale
+- SQL fluency: subqueries, window functions, execution plans, index basics
+
+---
+
+## Projects
 
 ### [`inventario-logistica-jdbc`](https://github.com/hectoroyogo/inventario-logistica-jdbc)
+> Inventory management system — Java 17 · JDBC · SQL Server · Docker · Maven
 
-> A complete inventory management backend built with Java 21, JDBC, and SQL Server.
+The main project. Started as a JDBC exercise and grew into a complete backend system with a web interface.
 
-Built to go beyond basic CRUD — this system handles real business logic including movement tracking, access control, and a full audit trail at the database level.
+**What it actually does:**
 
-**Architecture**
-
-```
-src/
-├── dao/          # Data access layer — all DB interaction isolated here
-├── service/      # Business logic, validation, transaction coordination
-├── model/        # Domain entities: Product, Movement, User, Role
-├── util/         # DB connection pool, config loader
-└── main/         # Entry point and console interface
-```
-
-**Key features**
-
-- Stock management with product categorization and real-time movement history
-- Role-based access control — admin and operator permission tiers
-- Full audit trail implemented with SQL Server `AFTER INSERT/UPDATE/DELETE` triggers
-- Parameterized queries throughout — no raw string concatenation
-- Advanced reporting: stock levels, movement logs, anomaly flags via correlated subqueries
+- Console interface and a separate lightweight HTTP server serving a frontend — same service and DAO layer, no logic duplication
+- Role-based access: admin and employee menus with different permission scopes
+- Password storage with SHA-256 hashing — not plaintext
+- Full audit trail via SQL Server `AFTER INSERT/UPDATE/DELETE` triggers on the `auditoria_productos` table
+- Database initialization on startup: detects if the DB exists, offers to preserve or recreate it with seed data
+- SQL Server runs in Docker — no local installation needed
 
 ```
-Stack  →  Java 21 · SQL Server · JDBC · T-SQL · Triggers
+src/main/java/
+  app/       →  startup, mode selection (console / web)
+  config/    →  JDBC connection, environment-aware config resolution
+  model/     →  domain entities
+  dao/       →  all database interaction
+  service/   →  business logic, transaction coordination
+  ui/        →  console menus
+  web/       →  HTTP server, session management, REST-like API
+  util/      →  shared validators
+sql/
+  init.sql   →  schema + seed data
+```
+
+```
+Stack  →  Java 17 · SQL Server · JDBC · T-SQL · Maven · Docker
 Pattern →  DAO / Service / Domain Model
 ```
+
+---
+
+### [`gestor-personal`](https://github.com/hectoroyogo/gestor-personal)
+> Personal management system — TypeScript · Next.js · PostgreSQL · Prisma · Docker
+
+A separate exploration outside Java. Monorepo with pnpm workspaces, a Next.js web app, Prisma-managed migrations, Docker Compose infrastructure, and a React Native mobile client.
+
+Primary value here was learning: monorepo structure, Docker Compose service orchestration, Prisma schema-first database modeling, and TypeScript across the stack. Work in progress.
+
+```
+apps/web      →  Next.js with integrated backend
+apps/mobile   →  Expo + React Native
+packages/db   →  Prisma + PostgreSQL
+infra/        →  Docker Compose for dev and production
+```
+
+---
+
+## Roadmap
+
+Where I'm heading over the next few months:
+
+- [ ] Rebuild the inventory system's API layer in Spring Boot
+- [ ] Add JUnit integration tests covering the service layer
+- [ ] Deploy a containerized Java + PostgreSQL app with Docker Compose
+- [ ] Implement proper REST conventions: pagination, error responses, validation
+- [ ] First contact with GitHub Actions for basic CI on a Java project
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hectoroyogo&layout=compact&theme=tokyonight&hide_border=true&langs_count=6)
+
+</div>
 
 ---
 
@@ -98,12 +141,9 @@ Pattern →  DAO / Service / Domain Model
 |---|---|
 | **GitHub** | [@hectoroyogo](https://github.com/hectoroyogo) |
 | **LinkedIn** | [linkedin.com/in/hectoroyogo](https://linkedin.com/in/hectoroyogo) |
-| **Email** | hectoroyogo@email.com |
 
 ---
 
 <div align="right">
-
-*Always building.*
-
+<sub>Spain · IT/DAM · Open to junior backend opportunities</sub>
 </div>
