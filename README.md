@@ -134,7 +134,6 @@ Where I'm heading over the next few months:
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hectoroyogo&layout=compact&theme=transparent&hide_border=true"/>
 
 </div>
-
 ---
 
 ## Contact
