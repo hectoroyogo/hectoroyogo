@@ -123,18 +123,6 @@ Where I'm heading over the next few months:
 - [ ] Implement proper REST conventions: pagination, error responses, validation
 - [ ] First contact with GitHub Actions for basic CI on a Java project
 
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hectoroyogo&show_icons=true&theme=transparent&hide_border=true"/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hectoroyogo&layout=compact&theme=transparent&hide_border=true"/>
-
-</div>
----
 
 ## Contact
 
