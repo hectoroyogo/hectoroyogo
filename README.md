@@ -11,11 +11,20 @@
 
 ---
 
-IT/DAM student focused on backend systems and data engineering. I build around the persistence layer — relational databases, application architecture, and the data flows that hold a system together.
+<div align="center">
 
-My main work right now is a full-stack inventory system built from scratch in Java: multi-layer architecture, role-based access, audit logging via SQL triggers, and a lightweight HTTP interface alongside the core console app. Docker handles local infrastructure.
+IT/DAM student focused on backend systems and data engineering.  
+I build around the persistence layer — relational databases, application architecture,  
+and the data flows that hold a system together.
 
-Not chasing breadth. Building depth where it matters at this stage.
+My main work right now is a full-stack inventory system built from scratch in Java:  
+multi-layer architecture, role-based access, audit logging via SQL triggers,  
+and a lightweight HTTP interface alongside the core console app.  
+Docker handles local infrastructure.
+
+**Not chasing breadth. Building depth where it matters at this stage.**
+
+</div>
 
 ---
 
@@ -25,45 +34,111 @@ Not chasing breadth. Building depth where it matters at this stage.
 
 [![Stack](https://skillicons.dev/icons?i=java,maven,docker,git,linux,idea&theme=dark)](https://skillicons.dev)
 
-</div>
+<br><br>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Technologies</th>
+  </tr>
+  <tr>
+    <td><strong>Language</strong></td>
+    <td>Java 17</td>
+  </tr>
+  <tr>
+    <td><strong>Data</strong></td>
+    <td>SQL Server · T-SQL · JDBC · Triggers · Stored Procedures</td>
+  </tr>
+  <tr>
+    <td><strong>Build & Dependencies</strong></td>
+    <td>Maven</td>
+  </tr>
+  <tr>
+    <td><strong>Infrastructure</strong></td>
+    <td>Docker · Docker Compose</td>
+  </tr>
+  <tr>
+    <td><strong>Version Control</strong></td>
+    <td>Git · GitHub</td>
+  </tr>
+  <tr>
+    <td><strong>Environment</strong></td>
+    <td>Linux · Bash</td>
+  </tr>
+  <tr>
+    <td><strong>Tooling</strong></td>
+    <td>IntelliJ IDEA</td>
+  </tr>
+</table>
 
 <br>
 
-| | Technologies |
-|---|---|
-| **Language** | Java 17 |
-| **Data** | SQL Server · T-SQL · JDBC · Triggers · Stored Procedures |
-| **Build & Dependencies** | Maven |
-| **Infrastructure** | Docker · Docker Compose |
-| **Version Control** | Git · GitHub |
-| **Environment** | Linux · Bash |
-| **Tooling** | IntelliJ IDEA |
+<strong>Currently learning</strong>
 
-**Currently learning**
+<br><br>
 
-| | Technologies |
-|---|---|
-| **Framework** | Spring Boot · Spring MVC |
-| **API Design** | REST · HTTP semantics · JSON contracts |
-| **Database** | PostgreSQL · Prisma (schema-first modeling) |
-| **Testing** | JUnit 5 · basic integration testing |
+<table>
+  <tr>
+    <th></th>
+    <th>Technologies</th>
+  </tr>
+  <tr>
+    <td><strong>Framework</strong></td>
+    <td>Spring Boot · Spring MVC</td>
+  </tr>
+  <tr>
+    <td><strong>API Design</strong></td>
+    <td>REST · HTTP semantics · JSON contracts</td>
+  </tr>
+  <tr>
+    <td><strong>Database</strong></td>
+    <td>PostgreSQL · Prisma</td>
+  </tr>
+  <tr>
+    <td><strong>Testing</strong></td>
+    <td>JUnit 5 · basic integration testing</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
 ## Currently Focused On
 
-- Transitioning from raw JDBC to Spring Boot — understanding what the framework abstracts and why
-- REST API design: resource modeling, status codes, error handling conventions
-- Docker multi-container setups: separating application and database services cleanly
-- Layered architecture patterns and their trade-offs at junior scale
-- SQL fluency: subqueries, window functions, execution plans, index basics
+<div align="center">
+
+<table>
+  <tr>
+    <td>Transitioning from raw JDBC to Spring Boot</td>
+  </tr>
+  <tr>
+    <td>REST API design: resource modeling, status codes, error handling conventions</td>
+  </tr>
+  <tr>
+    <td>Docker multi-container setups: separating application and database services cleanly</td>
+  </tr>
+  <tr>
+    <td>Layered architecture patterns and their trade-offs at junior scale</td>
+  </tr>
+  <tr>
+    <td>SQL fluency: subqueries, window functions, execution plans, index basics</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
 ## Projects
 
 ### [`inventario-logistica-jdbc`](https://github.com/hectoroyogo/inventario-logistica-jdbc)
-> Inventory management system — Java 17 · JDBC · SQL Server · Docker · Maven
+
+<div align="center">
+
+**Inventory management system — Java 17 · JDBC · SQL Server · Docker · Maven**
+
+</div>
 
 The main project. Started as a JDBC exercise and grew into a complete backend system with a web interface.
 
@@ -76,7 +151,7 @@ The main project. Started as a JDBC exercise and grew into a complete backend sy
 - Database initialization on startup: detects if the DB exists, offers to preserve or recreate it with seed data
 - SQL Server runs in Docker — no local installation needed
 
-```
+```text
 src/main/java/
   app/       →  startup, mode selection (console / web)
   config/    →  JDBC connection, environment-aware config resolution
@@ -88,51 +163,3 @@ src/main/java/
   util/      →  shared validators
 sql/
   init.sql   →  schema + seed data
-```
-
-```
-Stack  →  Java 17 · SQL Server · JDBC · T-SQL · Maven · Docker
-Pattern →  DAO / Service / Domain Model
-```
-
----
-
-### [`gestor-personal`](https://github.com/hectoroyogo/gestor-personal)
-> Personal management system — TypeScript · Next.js · PostgreSQL · Prisma · Docker
-
-A separate exploration outside Java. Monorepo with pnpm workspaces, a Next.js web app, Prisma-managed migrations, Docker Compose infrastructure, and a React Native mobile client.
-
-Primary value here was learning: monorepo structure, Docker Compose service orchestration, Prisma schema-first database modeling, and TypeScript across the stack. Work in progress.
-
-```
-apps/web      →  Next.js with integrated backend
-apps/mobile   →  Expo + React Native
-packages/db   →  Prisma + PostgreSQL
-infra/        →  Docker Compose for dev and production
-```
-
----
-
-## Roadmap
-
-Where I'm heading over the next few months:
-
-- [ ] Rebuild the inventory system's API layer in Spring Boot
-- [ ] Add JUnit integration tests covering the service layer
-- [ ] Deploy a containerized Java + PostgreSQL app with Docker Compose
-- [ ] Implement proper REST conventions: pagination, error responses, validation
-- [ ] First contact with GitHub Actions for basic CI on a Java project
-
-
-## Contact
-
-| | |
-|---|---|
-| **GitHub** | [@hectoroyogo](https://github.com/hectoroyogo) |
-| **LinkedIn** | [linkedin.com/in/hectoroyogo](https://linkedin.com/in/hectoroyogo) |
-
----
-
-<div align="right">
-<sub>Spain · IT/DAM · Open to junior backend opportunities</sub>
-</div>
