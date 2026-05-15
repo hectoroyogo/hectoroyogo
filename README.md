@@ -129,7 +129,9 @@ Where I'm heading over the next few months:
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hectoroyogo&layout=compact&theme=tokyonight&hide_border=true&langs_count=6)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hectoroyogo&show_icons=true&theme=transparent&hide_border=true"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hectoroyogo&layout=compact&theme=transparent&hide_border=true"/>
 
 </div>
 
