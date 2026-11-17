@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Arquitectura del HomeLab</title>
+  <desc id="desc">Desde Internet no se puede entrar: 0 puertos abiertos. Dentro de una red privada cifrada con WireGuard, el móvil y el portátil hablan con un servidor Linux 24/7 que, por un cable directo y Wake-on-LAN, enciende cuando hace falta una estación con GPU para la IA local y el vídeo.</desc>
+  <defs>
+    <pattern id="puntos" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#0a0a0b" opacity="0.08"/>
+    </pattern>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a1a1aa"/>
+    </marker>
+    <clipPath id="marco"><rect width="1000" height="430" rx="20"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#marco)">
+    <rect width="1000" height="430" fill="#fafafa"/>
+    <rect width="1000" height="430" fill="url(#puntos)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="999" height="429" rx="19.5" fill="none" stroke="#0a0a0b" stroke-opacity="0.08"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <!-- Internet -->
+    <circle cx="92" cy="215" r="54" fill="#ffffff" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <g fill="none" stroke="#52525b" stroke-width="1.4">
+      <circle cx="92" cy="196" r="10"/>
+      <ellipse cx="92" cy="196" rx="4.5" ry="10"/>
+      <path d="M82 196h20"/>
+    </g>
+    <text x="92" y="228" text-anchor="middle" font-size="16" font-weight="600" fill="#0a0a0b">Internet</text>
+    <g font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', Consolas, Menlo, monospace" font-size="13" fill="#dc2626" text-anchor="middle">
+      <text x="92" y="298">0 puertos</text>
+      <text x="92" y="316">abiertos</text>
+    </g>
+    <line x1="146" y1="215" x2="194" y2="215" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <path d="M200 207l14 16M214 207l-14 16" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Red privada -->
+    <rect x="226" y="34" width="748" height="362" rx="18" fill="#c6f432" fill-opacity="0.08" stroke="#65a30d" stroke-opacity="0.5"/>
+    <rect x="246" y="56" width="12" height="10" rx="2" fill="#4d7c0f"/>
+    <path d="M249 56v-3a3 3 0 0 1 6 0v3" fill="none" stroke="#4d7c0f" stroke-width="1.6"/>
+    <text x="266" y="66" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', Consolas, Menlo, monospace" font-size="12" letter-spacing="1.2" font-weight="600" fill="#4d7c0f">RED PRIVADA CIFRADA · WIREGUARD · PERMISOS POR APARATO</text>
+
+    <!-- Móvil -->
+    <rect x="256" y="104" width="172" height="88" rx="12" fill="#ffffff" stroke="#e4e4e7"/>
+    <rect x="396" y="120" width="14" height="24" rx="3" fill="none" stroke="#71717a" stroke-width="1.4"/>
+    <path d="M400 139h6" stroke="#71717a" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="276" y="138" font-size="18" font-weight="600" fill="#0a0a0b">Móvil</text>
+    <text x="276" y="162" font-size="13" fill="#52525b">app propia</text>
+    <text x="276" y="180" font-size="13" fill="#52525b">avisos cifrados</text>
+
+    <!-- Portátil -->
+    <rect x="256" y="238" width="172" height="88" rx="12" fill="#ffffff" stroke="#e4e4e7"/>
+    <rect x="389" y="256" width="22" height="14" rx="2" fill="none" stroke="#71717a" stroke-width="1.4"/>
+    <path d="M385 274h30" stroke="#71717a" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="276" y="272" font-size="18" font-weight="600" fill="#0a0a0b">Portátil</text>
+    <text x="276" y="296" font-size="13" fill="#52525b">panel web</text>
+    <text x="276" y="314" font-size="13" fill="#52525b">llave de acceso</text>
+
+    <!-- Servidor -->
+    <rect x="500" y="84" width="228" height="262" rx="14" fill="#ffffff" stroke="#65a30d" stroke-width="1.5"/>
+    <rect x="666" y="100" width="46" height="22" rx="11" fill="#c6f432"/>
+    <text x="689" y="115.5" text-anchor="middle" font-size="12" font-weight="700" fill="#0a0a0b">24/7</text>
+    <text x="520" y="126" font-size="20" font-weight="700" fill="#0a0a0b">Servidor Linux</text>
+    <text x="520" y="150" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', Consolas, Menlo, monospace" font-size="13" fill="#71717a">Docker · systemd</text>
+    <g font-size="13" fill="#3f3f46" text-anchor="middle">
+      <rect x="520" y="166" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="566" y="183.5">panel web</text>
+      <rect x="618" y="166" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="664" y="183.5">NAS</text>
+      <rect x="520" y="200" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="566" y="217.5">copias</text>
+      <rect x="618" y="200" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="664" y="217.5">vigilancia</text>
+      <rect x="520" y="234" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="566" y="251.5">juegos</text>
+      <rect x="618" y="234" width="92" height="26" rx="13" fill="#f4f4f5" stroke="#e4e4e7"/>
+      <text x="664" y="251.5">tickets</text>
+    </g>
+    <text x="520" y="298" font-size="13" fill="#52525b">más de 25 servicios</text>
+    <text x="520" y="318" font-size="13" fill="#52525b">que se vigilan solos</text>
+
+    <!-- Estación con GPU -->
+    <rect x="818" y="118" width="144" height="194" rx="14" fill="#ffffff" stroke="#e4e4e7"/>
+    <text x="836" y="150" font-size="18" font-weight="700" fill="#0a0a0b">Estación</text>
+    <text x="836" y="172" font-size="18" font-weight="700" fill="#0a0a0b">con GPU</text>
+    <g font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', Consolas, Menlo, monospace" font-size="13" fill="#71717a">
+      <text x="836" y="198">RTX 5060 Ti</text>
+      <text x="836" y="216">16 GB</text>
+    </g>
+    <text x="836" y="244" font-size="13" fill="#52525b">IA local · vídeo</text>
+    <rect x="836" y="264" width="108" height="24" rx="12" fill="none" stroke="#d4d4d8"/>
+    <text x="890" y="280.5" text-anchor="middle" font-size="12" fill="#52525b">bajo demanda</text>
+  </g>
+
+  <!-- Conexiones -->
+  <g fill="none" stroke="#a1a1aa" stroke-width="1.5">
+    <path d="M428 148C464 148 464 196 498 196" marker-end="url(#flecha)"/>
+    <path d="M428 282C464 282 464 234 498 234" marker-end="url(#flecha)"/>
+    <path d="M728 215H816" marker-end="url(#flecha)"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', Consolas, Menlo, monospace" font-size="10.5" fill="#71717a" text-anchor="middle">
+    <text x="773" y="204">cable directo</text>
+    <text x="773" y="235">Wake-on-LAN</text>
+  </g>
+  <g fill="#65a30d">
+    <circle r="3"><animateMotion dur="2.4s" repeatCount="indefinite" path="M428 148C464 148 464 196 496 196"/></circle>
+    <circle r="3"><animateMotion dur="2.4s" begin="-1.2s" repeatCount="indefinite" path="M428 282C464 282 464 234 496 234"/></circle>
+    <circle r="3"><animateMotion dur="1.8s" repeatCount="indefinite" path="M730 215H812"/></circle>
+  </g>
+</svg>
